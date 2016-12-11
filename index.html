@@ -109,16 +109,16 @@
 		.contain .picture dd{
 			margin-left: 30px;
 			margin-bottom: 10px;
+			width: 80%;
 		}
 		.contain .picture dd span{
 			border:1px solid #CBCBCB;
 			padding: 10px;
-			overflow: hidden;
 			display: inline-block;
+			width: 100%;
+			text-align: center;	
 		}
 		.contain .picture dd span .beautifulPic{
-			width: 253px;
-			height: 190px;
 			margin-top: 10px;
 		 }
 		/*arical2*/
@@ -155,7 +155,7 @@
 		}
 		.sidebar .mail{
 			margin-left: 10%;
-			margin-top: 20px;
+			margin-top: 30px;
 		}
 		.sidebar .mail label{
 			line-height: 30px;
@@ -208,13 +208,19 @@
 <body>
 	<header>
 		<h1><mip-img src="img/logo.jpg" alt="logo" class='logo1'/></h1>
-		<ul>
-			<li><mip-link href="https://github.com/" class='oneLink' target='_blank'>导航链接</mip-link></li>
-			<li><mip-link href="https://www.mipengine.org" class='oneLink' target='_blank'>导航链接</mip-link></li>
-			<li><mip-link href="https://www.mipengine.org" class='oneLink' target='_blank'>导航链接</mip-link></li>
-			<li><mip-link href="https://www.mipengine.org" class='oneLink' target='_blank'>导航链接</mip-link></li>
-		</ul>
+		<mip-nav-slidedown data-id='bs-navbar' class="mip-element-sidebar container">
+			<nav id='bs-navbar'  class="navbar-collapse collapse navbar navbar-static-top">
+				<ul>
+					<li><mip-link href="https://github.com/" class='oneLink' target='_blank'>导航链接</mip-link></li>
+					<li><mip-link href="https://www.mipengine.org" class='oneLink' target='_blank'>导航链接</mip-link></li>
+					<li><mip-link href="https://www.mipengine.org" class='oneLink' target='_blank'>导航链接</mip-link></li>
+					<li><mip-link href="https://www.mipengine.org" class='oneLink' target='_blank'>导航链接</mip-link></li>
+				</ul>
+			</nav>
+		</mip-nav-slidedown>
+		
 	</header>
+
 	<div class="contain">
 		<div class="artical1 init">
 			<h2>小王子</h2>
@@ -251,11 +257,11 @@
 			
 			<dl>
 				<dt><h2>图片</h2></dt>
-				<dd><span>好看的图片<br/><mip-img layout='responsive' popup src="img/1.jpg" alt="one" class='beautifulPic'></span></dd>
-				<dd><span>好看的图片<br/><mip-img popup src="img/1.jpg" alt="one" class='beautifulPic'></span></dd>
-				<dd><span>好看的图片<br/><mip-img popup src="img/2.jpeg" alt="one" class='beautifulPic'></span></dd>
-				<dd><span>好看的图片<br/><mip-img popup src="img/1.jpg" alt="one" class='beautifulPic'></span></dd>
-				<dd><span>好看的图片<br/><mip-img popup src="img/1.jpg" alt="one" class='beautifulPic'></span></dd>
+				<dd><span>好看的图片<br/><mip-img layout='responsive' width='253' height='190' popup src="img/1.jpg" alt="one" class='beautifulPic'></span></dd>
+				<dd><span>好看的图片<br/><mip-img  layout='responsive' width='253' height='190' popup src="img/1.jpg" alt="one" class='beautifulPic'></span></dd>
+				<dd><span>好看的图片<br/><mip-img  layout='responsive' width='253' height='190' popup src="img/1.jpg" alt="one" class='beautifulPic'></span></dd>
+				<dd><span>好看的图片<br/><mip-img  layout='responsive' width='253' height='190' popup src="img/1.jpg" alt="one" class='beautifulPic'></span></dd>
+				<dd><span>好看的图片<br/><mip-img  layout='responsive' width='253' height='190' popup src="img/1.jpg" alt="one" class='beautifulPic'></span></dd>
 			</dl>		
 		</div>
 		<div class="artical2 init">
@@ -345,5 +351,7 @@
 	<script type="text/javascript" src="https://mipcache.bdstatic.com/static/v1/mip-fixed/mip-fixed.js"></script>
 	<!--快速回顶-->
 	<script type="text/javascript" src="https://mipcache.bdstatic.com/static/v1/mip-gototop/mip-gototop.js"></script>
+	<!--响应式菜单-->
+	<script type="text/javascript" src="https://mipcache.bdstatic.com/static/v1/mip-nav-slidedown/mip-nav-slidedown.js"></script>
 </body>
 </html>
