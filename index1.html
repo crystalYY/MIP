@@ -4,7 +4,7 @@
 	<meta charset="utf-8">	
 	<meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
     <link rel="stylesheet" type="text/css" href="https://mipcache.bdstatic.com/static/v1/mip.css">
-    <link rel="canonical" href="https://crystalyy.github.io/MIP/">
+    <link rel="canonical" href="file:///D:/github/MIP/index.html">
     <title>基本布局</title>
 	<style mip-custom>
 		*{
@@ -181,6 +181,7 @@
 		.sidebar .baseinformation span{
 			line-height: 40px;
 		}	
+		
 		.sidebar .baseinformation textarea{
 			width: 70%;
 			height: 200px;
@@ -320,6 +321,23 @@
 			</div>
 			
 			<div class="baseinformation" id="baseinformation">
+				<span>性别：</span>	
+				<label for="male">			
+				<input type="radio" name="sex" id="male" checked="checked" />
+				男</label>
+				<label for="female">
+				<input type="radio" name="sex" id="female" />
+				女</label><br/>				
+				<span>爱好：</span>
+				<label>
+					<input type="checkbox" name="sport">运动
+				</label>
+				<label>
+					<input type="checkbox" name="art">艺术
+				</label>
+				<label>
+					<input type="checkbox" name="science">科学<br/>
+				</label>				
 				<span>个人描述：</span>
 				<textarea>这是一个多行文本框，输入您的个人描述</textarea><br/>
 			</div>
@@ -329,11 +347,6 @@
 	<!--左侧悬浮框-->
 	<mip-fixed type='left' top='200px'>
 		<mip-img src='img/4.png' alt='左侧悬浮框' ></mip-img>
-	</mip-fixed>
-
-	<!--快速回顶-->
-	<mip-fixed type='gototop'>
-		<mip-gototop></mip-gototop>
 	</mip-fixed>
 	<footer>
 		版权所有&copy;crystal
@@ -346,7 +359,5 @@
 	<script type="text/javascript" src="https://mipcache.bdstatic.com/static/v1/mip-form/mip-form.js"></script>
 	<!--悬浮框-->
 	<script type="text/javascript" src="https://mipcache.bdstatic.com/static/v1/mip-fixed/mip-fixed.js"></script>
-	<!--快速回顶-->
-	<script type="text/javascript" src="https://mipcache.bdstatic.com/static/v1/mip-gototop/mip-gototop.js"></script>
 </body>
 </html>
