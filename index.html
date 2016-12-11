@@ -154,7 +154,7 @@
 			padding-left:10px;
 		}
 		.sidebar .mail{
-			margin-left: 280px;
+			margin-left: 10%;
 			margin-top: 20px;
 		}
 		.sidebar .mail label{
@@ -166,15 +166,12 @@
 		#mailaddressError{
 			margin-bottom: 10px;
 		}
-		#inputPassword1{
-			margin-left: 32px;
-		}
 		.sidebar .mail .Error{
-			margin-left: 132px;
+			margin-left: 10px;
 			color: #A0A6B6;
 		}
 		.sidebar .baseinformation{
-			margin-left: 362px;
+			margin-left: 10%;
 			margin-bottom: 15px;
 			overflow: hidden;
 		}
@@ -254,7 +251,7 @@
 			
 			<dl>
 				<dt><h2>图片</h2></dt>
-				<dd><span>好看的图片<br/><mip-img popup src="img/1.jpg" alt="one" class='beautifulPic'></span></dd>
+				<dd><span>好看的图片<br/><mip-img layout='responsive' popup src="img/1.jpg" alt="one" class='beautifulPic'></span></dd>
 				<dd><span>好看的图片<br/><mip-img popup src="img/1.jpg" alt="one" class='beautifulPic'></span></dd>
 				<dd><span>好看的图片<br/><mip-img popup src="img/2.jpeg" alt="one" class='beautifulPic'></span></dd>
 				<dd><span>好看的图片<br/><mip-img popup src="img/1.jpg" alt="one" class='beautifulPic'></span></dd>
@@ -313,9 +310,9 @@
 				<input type="input" validatetarget='mailError' validatetype='email' id="mailaddress" placeholder="这是一个文本输入框" name="mailaddress" />
 				<p class="Error" target='mailError'>邮箱地址按格式要求输入</p>
 				<label for="inputPassword" id="inputPassword1">请输入密码：</label>
-				<input type="input" validatetarget='passwordError' validatetype='must' id="inputPassword" placeholder="请输入密码" /><br/>
+				<input type="password" validatetarget='passwordError' id="inputPassword" placeholder="请输入密码" /><br/>
 				<label for="passwordAgain">请重复输入密码：</label>
-				<input type="password" validatetarget='passwordError' validatetype='must' id="passwordAgain" placeholder="请再次输入密码" />
+				<input type="password" validatetarget='passwordError' id="passwordAgain" placeholder="请再次输入密码" />
 				<p class="Error" target='passwordError'>密码为6-10位数字</p>
 			</div>
 			
